@@ -37,4 +37,9 @@ int64_t Adder::tell() const {
     });
 }
 
+std::shared_ptr<Adder> create_adder()
+{
+    return std::make_shared<Adder>();
+}
+
 }}

@@ -8,7 +8,7 @@ pub struct Adder {
 impl Adder {
     pub fn add(&mut self, value: i64) {
         info!("Adder::add()");
-        self.count += value;
+        self.count += value + 1;
     }
 
     pub fn tell(&self) -> i64 {

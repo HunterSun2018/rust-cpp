@@ -15,6 +15,6 @@ public:
 };
 
 
-std::shared_ptr<Adder> create_adder();
+//std::shared_ptr<Adder> create_adder();
 
 #endif

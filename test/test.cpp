@@ -5,11 +5,15 @@ using namespace std;
 
 int main(int argc, char * argv[])
 {
-    Adder adder;
+    using namespace test;
 
-    adder.add(10);
+    auto adder = Adder::create();
 
-    cout << "adder tell me : " << adder.tell() << endl;
+    adder->add(10);
+
+    auto account = adder->create_account();
+
+    cout << "adder tell me : " << adder->tell() << endl;
 
     return 0;
 }

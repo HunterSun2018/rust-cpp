@@ -60,7 +60,12 @@ namespace test
         {
             return Account();
         }
-        
+
+        Account create_account1()
+        {
+            return Account();
+        }
+
     };
 
     std::shared_ptr<Adder> 
